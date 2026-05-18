@@ -103,7 +103,6 @@ body {
     text-align: center;
     background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
     padding-top: 80px;
-    /* Desktop padding */
 }
 
 .hero-content {
@@ -157,7 +156,8 @@ body {
     margin-bottom: 1.5rem;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 3.8s steps(30, end) forwards, blink 0.8s step-end infinite;
+    border-right: none;
+    animation: typing 3.8s steps(30, end) forwards;
 }
 
 @keyframes typing {
@@ -300,7 +300,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1vw;
-
     margin-top: 20px;
 }
 
@@ -398,17 +397,14 @@ body {
         font-size: 1.25rem;
     }
 
-    /* HERO - Reduced top padding to fix the big gap */
+    /* HERO */
     .hero {
         padding-top: 70px;
-
-        /* Much smaller than before */
         min-height: 100vh;
     }
 
     .hero-content {
         padding-top: 0;
-        /* No extra top space */
     }
 
     .hero-badge {
@@ -522,7 +518,6 @@ body {
         border-radius: 2vw;
         padding-top: 1.4vw;
         text-align: center;
-
         width: 100%;
     }
 }
