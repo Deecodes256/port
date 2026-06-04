@@ -507,7 +507,12 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
-
+.projects-grid-2{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 3vw;
+}
 .project-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -731,7 +736,13 @@ footer p {
     font-size: 0.8rem;
     color: var(--muted);
 }
+.designhive{
+    margin-top: 5vw;
+    font-size: 2vw;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
 
+}
 /* ====================== RESPONSIVE ====================== */
 @media (max-width: 1024px) {
     .projects-grid {
