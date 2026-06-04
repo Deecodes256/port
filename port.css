@@ -748,7 +748,9 @@ footer p {
     .projects-grid {
         grid-template-columns: 1fr 1fr;
     }
-
+   .projects-grid-2 {
+       grid-template-columns: 1fr 1fr;
+   }
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -778,7 +780,9 @@ footer p {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-
+        .projects-grid-2 {
+            grid-template-columns: 1fr;
+        }
     .about-cards {
         grid-template-columns: 1fr 1fr;
     }
@@ -806,4 +810,7 @@ footer p {
     .projects-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+                .projects-grid-2 {
+                    grid-template-columns: repeat(3, 1fr);
+                }
 }
