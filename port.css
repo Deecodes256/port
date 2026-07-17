@@ -513,6 +513,12 @@ section {
         gap: 1.5rem;
         margin-top: 3vw;
 }
+.projects-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3vw;
+}
 .project-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -751,6 +757,9 @@ footer p {
    .projects-grid-2 {
        grid-template-columns: 1fr 1fr;
    }
+          .projects-grid-3 {
+              grid-template-columns: 1fr 1fr;
+          }
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -783,6 +792,9 @@ footer p {
         .projects-grid-2 {
             grid-template-columns: 1fr;
         }
+                          .projects-grid-3 {
+                              grid-template-columns: 1fr;
+                          }
     .about-cards {
         grid-template-columns: 1fr 1fr;
     }
@@ -813,4 +825,7 @@ footer p {
                 .projects-grid-2 {
                     grid-template-columns: repeat(3, 1fr);
                 }
+                                 .projects-grid-3 {
+                                     grid-template-columns: repeat(3, 1fr);
+                                 }
 }
