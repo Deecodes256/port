@@ -459,6 +459,31 @@ section {
 }
 
 /* ====================== ABOUT ====================== */
+#ecommerce {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: var(--surface);
+}
+
+.ecommerce-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.ecommerce-grid + .ecommerce-grid {
+    margin-top: 1.5rem;
+}
+
+.ecommerce-grid .project-card {
+    cursor: pointer;
+}
+
+.ecommerce-grid .project-img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
 #about {
     background: var(--surface);
 }
@@ -535,6 +560,7 @@ section {
 
 /* ====================== PROJECTS ====================== */
 #projects {
+    padding-top: 0;
     background: var(--bg);
 }
 
@@ -908,6 +934,10 @@ footer p {
         grid-template-columns: 1fr 1fr;
     }
 
+    .ecommerce-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .reviews-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -957,7 +987,8 @@ footer p {
 
     .projects-grid,
     .projects-grid-2,
-    .projects-grid-3 {
+    .projects-grid-3,
+    .ecommerce-grid {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -970,13 +1001,15 @@ footer p {
 
     .projects-grid::-webkit-scrollbar,
     .projects-grid-2::-webkit-scrollbar,
-    .projects-grid-3::-webkit-scrollbar {
+    .projects-grid-3::-webkit-scrollbar,
+    .ecommerce-grid::-webkit-scrollbar {
         display: none;
     }
 
     .projects-grid .project-card,
     .projects-grid-2 .project-card,
-    .projects-grid-3 .project-card {
+    .projects-grid-3 .project-card,
+    .ecommerce-grid .project-card {
         flex: 0 0 82%;
         scroll-snap-align: start;
     }
